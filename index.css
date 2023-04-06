@@ -1,0 +1,245 @@
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.banner,
+.banner img {
+    width: 96%;
+    margin: auto;
+    
+}
+
+nav {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 2px 5px 2px;
+    border-bottom: 1px solid gray;
+}
+
+.left,
+.right {
+    width: 40%;
+}
+
+.right {
+    padding-right: 10px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+ul li {
+    text-decoration: none;
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.navicon {
+    padding: 5px 1px 1px 1px;
+    width: 20px;
+    height: 20px;
+}
+
+.logo {
+    width: 40%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .right {
+        display: none;
+        width: 0px;
+    }
+
+}
+
+/* ------------------------------- header css starts from here -----------  */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+
+.location-btn {
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    gap: 5px;
+    font-weight: 600;
+    font-size: 12px;
+    background: #FF9933;
+    border-radius: 20px;
+}
+
+input {
+    border: 1px solid transparent;
+    outline: none;
+}
+
+.search-container {
+    width: 30%;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    border: 1px solid rgba(128, 128, 128, 0.486);
+}
+
+@media only screen and (max-width: 900px) {
+    .location-btn {
+        font-size: 12px;
+        padding: 7px 10px;
+        gap: 5px;
+
+    }
+
+    .search-container {
+        width: 55%;
+        padding: 10px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 15px;
+        border: 1px solid rgba(128, 128, 128, 0.486);
+    }
+}
+
+/* ------------------ categories-----------------  */
+.categories{
+    margin: 5px 0px 25px 0px;
+}
+.categories ul {
+    padding: 2px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.685);
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 900px) {
+    .categories {
+        visibility: hidden;
+    }
+}
+
+/* ----------------- hot deals---------------------  */
+
+.hot-deals-container {
+    display: flex;
+    align-items: center;
+    
+}
+
+.hot-deals-container .left-part {
+    width: 40%;
+
+}
+
+.left-part {
+    font-size: 65px;
+    line-height: 10px;
+    padding: 5px 22px;
+    align-items: center;
+}
+
+.orange-color-text {
+    color: #FF9933;
+    font-weight: 800;
+}
+
+.right-part {
+    width: 60%;
+}
+
+.right-part .upper {
+    border-bottom: 2px dashed #FF9933;
+    width: 80%;
+    font-weight: 800;
+}
+
+/* ---lower part--- */
+.lower {
+    padding: 20px;
+
+}
+
+.hot-deal-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    gap: 60px;
+}
+
+.product-container {
+    font-weight: 600;
+    font-size: 12px;
+    width: 25%;
+}
+
+.prod-img img {
+    width: 100%;
+}
+
+.prod-price {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+.original-price {
+    text-decoration: line-through;
+}
+
+.discount {
+    color: red;
+}
+
+.discounted-price {
+    font-weight: 500;
+    text-align: center;
+    color: #138808;
+}
+
+
+/* ---------- .today-deals--------------  */
+.today-deals-heading{
+    border-bottom: 2px dashed #FF9933;
+    margin-top: 20px;
+    padding:20px 26px 5px 26px;
+    width: 90%;
+    margin: auto;
+    font-weight: 600;
+}
+.today-deals {
+    display: flex;
+    overflow-y: scroll;
+    gap: 70px;
+    padding: 26px;
+    overflow: hidden;
+}
+.today-deals .prod-img{
+    width: 80%;
+}
