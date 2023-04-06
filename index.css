@@ -457,6 +457,7 @@ input {
     padding: 20px 0px;
     height: 650px;
     display: relative;
+    overflow: hidden;
 }
 
 .kitchenbanner img {
@@ -471,9 +472,8 @@ input {
     flex-direction: column;
     position: relative;
     top: -20rem;
-    left: 32rem;
+    left: 4rem;
     text-align: center;
-    transform: translate(-50%, -50%);
     z-index: 10;
 }
 
@@ -492,7 +492,7 @@ input {
 
 .kitchenbanner-text :nth-child(2) {
     font-family: 'Alex Brush', cursive;
-    font-size: 85px;
+    font-size: 95px;
     right: 0;
     padding: 1.2rem 0rem 0rem 0rem;
     width: fit-content;
@@ -519,11 +519,7 @@ input {
     }
 
     .kitchenbanner-text {
-        width: 70%;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        position: relative;
+
         top: -12rem;
         left: 20rem;
         text-align: center;
@@ -532,14 +528,9 @@ input {
     }
 
     .kitchenbanner-text :nth-child(2) {
-        font-family: 'Alex Brush', cursive;
+
         font-size: 60px;
-        right: 0;
-        padding: 1.2rem 0rem 0rem 0rem;
-        width: fit-content;
-        margin: auto;
-        text-align: center;
-        font-weight: 500;
+
     }
 }
 
@@ -549,12 +540,8 @@ input {
     }
 
     .kitchenbanner-text {
-        width: 70%;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        top: -6rem;
+
+        top: -7rem;
         left: 10rem;
         text-align: center;
         transform: translate(-50%, -50%);
@@ -575,14 +562,9 @@ input {
     }
 
     .kitchenbanner-text :nth-child(2) {
-        font-family: 'Alex Brush', cursive;
+
         font-size: 35px;
-        right: 0;
-        padding: 1.2rem 0rem 0rem 0rem;
-        width: fit-content;
-        margin: auto;
-        text-align: center;
-        font-weight: 500;
+
     }
 }
 
