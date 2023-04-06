@@ -60,20 +60,20 @@ ul li a {
 }
 
 .logo {
-    width: 50%;
+    width: 70%;
     padding: 0px 10px;
 }
 
 @media only screen and (max-width: 1000px) {
     .logo {
-        width: 90%;
+        width: 100%;
     }
 
     .right {
         display: none;
         width: 0px;
     }
-    
+
 
 }
 
@@ -109,7 +109,7 @@ input {
 
 .search-container {
     width: 40%;
-    padding: 10px 10px;
+    padding: 12px 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -197,11 +197,13 @@ input {
     border-bottom: 2px dashed #FF9933;
     width: 80%;
     font-weight: 900;
-   
+
 }
-.right-part .upper p{
+
+.right-part .upper p {
     margin: 5px;
 }
+
 /* ---lower part--- */
 .lower {
     padding: 20px;
@@ -294,9 +296,8 @@ input {
     }
 
     .hot-deals-container .left-part {
-        font-size: 50px;
-        margin: auto;
-        align-items: center;
+        font-size: 30px;
+
     }
 
     .hot-deals-container .left-part,
@@ -314,8 +315,13 @@ input {
         width: 40%;
         flex-shrink: 0;
     }
-    .left-part{
+
+    .left-part {
         font-size: 20px;
+    }
+
+    .right-part .upper p {
+        padding:20px;
     }
 }
 
@@ -362,6 +368,9 @@ input {
 }
 
 @media only screen and (max-width: 500px) {
+    .today-deals-heading{
+        padding: 20px 26px 20px 26px;
+    }
     .today-deals {
 
         gap: 20px;
@@ -421,11 +430,14 @@ input {
 }
 
 @media only screen and (max-width: 500px) {
+    .newly-launched-shops-heading{
+        padding: 20px 26px 20px 26px;
+    }
     .shop-container {
 
         flex-wrap: wrap;
-padding: 2px;
-gap: 5px;
+        padding: 2px;
+        gap: 5px;
     }
 
     .shop-card {
@@ -483,6 +495,9 @@ gap: 5px;
 @media only screen and (max-width: 500px) {
     .deals-of-electronics-container .product-container {
         width: 40%;
+    }
+    .deals-of-electronics-heading{
+        padding: 20px 26px 20px 26px;
     }
 }
 
@@ -549,10 +564,13 @@ gap: 5px;
 }
 
 @media only screen and (max-width: 500px) {
-    
-.review-container {
-    justify-content: center;
+.review-heading{
+    padding: 20px 26px 20px 26px;
 }
+    .review-container {
+        justify-content: center;
+    }
+
     .review-card {
         width: 400px;
         margin: auto;
