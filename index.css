@@ -5,9 +5,7 @@ body {
     margin: 0px;
     box-sizing: border-box;
 }
-.banner{
-    height: 150px;
-}
+
 .banner,
 .banner img {
     width: 96%;
@@ -323,7 +321,7 @@ input {
     }
 
     .right-part .upper p {
-        padding:5px;
+        padding: 5px;
     }
 }
 
@@ -370,9 +368,10 @@ input {
 }
 
 @media only screen and (max-width: 500px) {
-    .today-deals-heading{
+    .today-deals-heading {
         padding: 20px 26px 10px 26px;
     }
+
     .today-deals {
 
         gap: 20px;
@@ -432,9 +431,10 @@ input {
 }
 
 @media only screen and (max-width: 500px) {
-    .newly-launched-shops-heading{
+    .newly-launched-shops-heading {
         padding: 20px 26px 20px 26px;
     }
+
     .shop-container {
 
         flex-wrap: wrap;
@@ -455,10 +455,145 @@ input {
     width: 90%;
     margin: auto;
     padding: 20px 0px;
+    height: 650px;
+    display: relative;
 }
 
 .kitchenbanner img {
     width: 100%;
+    position: relative;
+}
+
+.kitchenbanner-text {
+    width: 70%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -20rem;
+    left: 32rem;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.kitchenbanner-text span {
+    width: fit-content;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.kitchenbanner-text :nth-child(1) {
+    float: right;
+    position: absolute;
+    right: 0;
+
+}
+
+.kitchenbanner-text :nth-child(2) {
+    font-family: 'Alex Brush', cursive;
+    font-size: 85px;
+    right: 0;
+    padding: 1.2rem 0rem 0rem 0rem;
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 1000px) {
+    .kitchenbanner {
+        height: 500px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .kitchenbanner {
+        height: 400px;
+    }
+
+    .kitchenbanner-text span {
+        width: fit-content;
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .kitchenbanner-text {
+        width: 70%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: -12rem;
+        left: 20rem;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+    }
+
+    .kitchenbanner-text :nth-child(2) {
+        font-family: 'Alex Brush', cursive;
+        font-size: 60px;
+        right: 0;
+        padding: 1.2rem 0rem 0rem 0rem;
+        width: fit-content;
+        margin: auto;
+        text-align: center;
+        font-weight: 500;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .kitchenbanner {
+        height: 200px;
+    }
+
+    .kitchenbanner-text {
+        width: 70%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: -6rem;
+        left: 10rem;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+    }
+
+    .kitchenbanner-text span {
+        width: fit-content;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .kitchenbanner-text :nth-child(1) {
+        float: right;
+        position: absolute;
+        right: 0;
+
+    }
+
+    .kitchenbanner-text :nth-child(2) {
+        font-family: 'Alex Brush', cursive;
+        font-size: 35px;
+        right: 0;
+        padding: 1.2rem 0rem 0rem 0rem;
+        width: fit-content;
+        margin: auto;
+        text-align: center;
+        font-weight: 500;
+    }
+}
+
+
+
+
+.kitchenbanner-text :nth-child(3) {
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    font-weight: 500;
 }
 
 /* -------------deals-of-electronics------------- */
@@ -498,7 +633,8 @@ input {
     .deals-of-electronics-container .product-container {
         width: 40%;
     }
-    .deals-of-electronics-heading{
+
+    .deals-of-electronics-heading {
         padding: 20px 26px 20px 26px;
     }
 }
@@ -566,9 +702,10 @@ input {
 }
 
 @media only screen and (max-width: 500px) {
-.review-heading{
-    padding: 20px 26px px 26px;
-}
+    .review-heading {
+        padding: 20px 26px px 26px;
+    }
+
     .review-container {
         justify-content: center;
     }
