@@ -1,7 +1,9 @@
 body {
     font-family: 'Nunito Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
 }
 
 .banner,
@@ -17,7 +19,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 2px 2px 5px 2px;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.555);
 }
 
 .left {
@@ -58,19 +60,20 @@ ul li a {
 }
 
 .logo {
-    width: 40%;
+    width: 50%;
     padding: 0px 10px;
 }
 
 @media only screen and (max-width: 1000px) {
     .logo {
-        width: 60%;
+        width: 90%;
     }
 
     .right {
         display: none;
         width: 0px;
     }
+    
 
 }
 
@@ -89,12 +92,12 @@ ul li a {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 10px 10px;
+    padding: 14px 14px;
     gap: 5px;
     font-weight: 600;
     font-size: 12px;
     background: #FF9933;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 
 input {
@@ -105,7 +108,7 @@ input {
 }
 
 .search-container {
-    width: 30%;
+    width: 40%;
     padding: 10px 10px;
     display: flex;
     align-items: center;
@@ -155,7 +158,7 @@ input {
 
 @media only screen and (max-width: 900px) {
     .categories {
-        visibility: hidden;
+        display: none;
     }
 }
 
@@ -174,7 +177,7 @@ input {
 }
 
 .left-part {
-    font-size: 65px;
+    font-size: 75px;
     line-height: 10px;
     padding: 5px 22px;
     align-items: center;
@@ -190,11 +193,15 @@ input {
 }
 
 .right-part .upper {
+    font-size: 20px;
     border-bottom: 2px dashed #FF9933;
     width: 80%;
-    font-weight: 800;
+    font-weight: 900;
+   
 }
-
+.right-part .upper p{
+    margin: 5px;
+}
 /* ---lower part--- */
 .lower {
     padding: 20px;
@@ -307,6 +314,9 @@ input {
         width: 40%;
         flex-shrink: 0;
     }
+    .left-part{
+        font-size: 20px;
+    }
 }
 
 /* ---------- .today-deals--------------  */
@@ -414,7 +424,8 @@ input {
     .shop-container {
 
         flex-wrap: wrap;
-
+padding: 2px;
+gap: 5px;
     }
 
     .shop-card {
@@ -535,4 +546,15 @@ input {
 
 .rating img {
     width: 70%;
+}
+
+@media only screen and (max-width: 500px) {
+    
+.review-container {
+    justify-content: center;
+}
+    .review-card {
+        width: 400px;
+        margin: auto;
+    }
 }
