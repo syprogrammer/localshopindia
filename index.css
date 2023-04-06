@@ -520,7 +520,7 @@ input {
 
     .kitchenbanner-text {
 
-        top: -12rem;
+        top: -10rem;
         left: 20rem;
         text-align: center;
         transform: translate(-50%, -50%);
@@ -541,7 +541,7 @@ input {
 
     .kitchenbanner-text {
 
-        top: -7rem;
+        top: -5rem;
         left: 10rem;
         text-align: center;
         transform: translate(-50%, -50%);
@@ -563,7 +563,7 @@ input {
 
     .kitchenbanner-text :nth-child(2) {
 
-        font-size: 35px;
+        font-size: 30px;
 
     }
 }
