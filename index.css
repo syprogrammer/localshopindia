@@ -6,9 +6,14 @@ body {
     box-sizing: border-box;
 }
 
-.banner,
+.banner {
+    width: 90%;
+    margin: auto;
+}
+
 .banner img {
-    width: 96%;
+    width: 100%;
+
     margin: auto;
 
 }
